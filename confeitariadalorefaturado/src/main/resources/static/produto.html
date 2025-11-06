@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Produto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cliente.html">Clientes</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+        <li><a href="funcionario.html">Funcionários</a></li>
+        <li><a href="venda.html">Vendas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="produtoForm" onsubmit="return validarProduto()">
+      <label for="nomeProduto">Nome do Produto:</label>
+      <input type="text" id="nomeProduto" name="nome" required>
+
+      <label for="preco">Preço (R$):</label>
+      <input type="number" id="preco" name="preco" step="0.01" required>
+
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade_disponivel" required>
+
+      <button type="submit">Salvar Produto</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2025 Confeitaria Da Lo</p></footer>
+  <button id="topo" onclick="voltarAoTopo()">↑</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
+

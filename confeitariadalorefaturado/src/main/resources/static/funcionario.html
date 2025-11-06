@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Funcionário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Funcionário</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cliente.html">Clientes</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+        <li><a href="funcionario.html">Funcionários</a></li>
+        <li><a href="venda.html">Vendas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="funcionarioForm" onsubmit="return validarFuncionario()">
+      <label for="nomeFunc">Nome:</label>
+      <input type="text" id="nomeFunc" name="nome" required>
+
+      <label for="login">Login:</label>
+      <input type="text" id="login" name="login" required>
+
+      <button type="submit">Salvar Funcionário</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2025 Confeitaria Da Lo</p></footer>
+  <button id="topo" onclick="voltarAoTopo()">↑</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
